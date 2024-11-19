@@ -1,0 +1,63 @@
+/* Custom Styles */
+
+body {
+    background: linear-gradient(120deg, #081b29, #1a2a40);
+    font-family: 'Poppins', sans-serif;
+    color: #ededed;
+}
+
+/* Home Section */
+.home {
+    height: 100vh;
+    background: url('background.jpg') no-repeat center center / cover;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.home h1 {
+    animation: fadeIn 2s ease-in-out;
+}
+
+.home p {
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* About Section */
+.about table {
+    margin-top: 20px;
+    animation: slideIn 1.5s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Contact Section */
+.contact-item {
+    background: #1a2a40;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
